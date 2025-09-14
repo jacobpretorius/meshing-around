@@ -295,7 +295,7 @@ def onReceive(packet, interface):
                 hop = "Direct"
                 hop_count = 0
             elif hop_start == 0 and hop_limit > 0 or via_mqtt:
-                hop = "MQTT"
+                hop = ""
                 hop_count = 0
             else:
                 # set hop to Direct if the message was sent directly otherwise set the hop count
